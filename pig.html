@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./pig.css">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <section class="parent-1">
+      <div class="container parent-2">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <button class="new-game btn--new">🔄 New game</button>
+          </div>
+          <div class="col-12 text-center justify-content-center dice-parent">
+            <p class="dice">?</p>
+          </div>
+          <div class="col-5 text-center player player--active player--0">
+            <h1 class="pl-1 name" id="name--0">Player 1</h1>
+            <p class="plscore-1 score" id="score--0">20</p>
+            <p class="plcurrent-1 current-label">
+              Current
+              <span class="d-block current--score" id="current--0">0</span>
+            </p>
+          </div>
+          <div class="col-5 text-center player player--1">
+            <h1 class="pl-2 name" id="name--1">Player 2</h1>
+            <p class="plscore-2 score" id="score--1">20</p>
+            <p class="plcurrent-2 current-label">
+              Current
+              <span class="d-block current--score" id="current--1">0</span>
+            </p>
+          </div>
+          <div class="col-12 text-center">
+            <button class="rolldice btn--roll">🎲 Roll dice</button>
+          </div>
+          <div class="col-12 text-center">
+            <button class="hold btn--hold">📥 Hold</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./pig.js"></script>
+  </body>
+</html>
